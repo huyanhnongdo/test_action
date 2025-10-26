@@ -32,7 +32,7 @@ jobs:
       # 4️⃣ Biên dịch module bằng Nuitka
       - name: Compile module with Nuitka
         run: |
-          python -m nuitka --module filename.py --output-dir=build
+          python -m nuitka --module a.py --output-dir=build
           ls -lh build/
 
       # 5️⃣ Xuất artifact sau khi build
